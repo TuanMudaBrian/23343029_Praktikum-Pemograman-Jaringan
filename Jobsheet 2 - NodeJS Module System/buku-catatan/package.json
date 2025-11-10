@@ -1,0 +1,18 @@
+{
+  "name": "buku-catatan",
+  "version": "1.0.0",
+  "description": "",
+  "main": "apps.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "dependencies": {
+    "chalk": "^4.1.2",
+    "validator": "^13.11.0",
+    "yargs": "^18.0.0"
+  }
+}
