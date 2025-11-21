@@ -1,0 +1,417 @@
+/* --- Base Styling - Warm Minimalist --- */
+body {
+  color: #4a4a4a;
+  font-family: "Georgia", "Lora", serif;
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 0 24px;
+  background-color: #f8f7f3;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+.main-content {
+  flex-grow: 1;
+}
+
+footer {
+  color: #8d8d8d;
+  border-top: 1px solid #e0e0e0;
+  margin-top: 40px;
+  padding: 20px 0;
+  text-align: center;
+  font-size: 0.9em;
+}
+
+header {
+  margin-top: 30px;
+  margin-bottom: 60px;
+  text-align: center;
+}
+
+h1 {
+  font-size: 48px;
+  color: #5d8063;
+  margin-bottom: 10px;
+  font-weight: 700;
+}
+
+header a {
+  color: #8d8d8d;
+  margin: 0 12px;
+  text-decoration: none;
+  font-weight: 500;
+  transition: color 0.3s ease;
+}
+
+header a:hover {
+  color: #b56576;
+}
+
+.potrait,
+img {
+  width: 180px;
+  height: 180px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 4px solid #b56576;
+  box-shadow: 0 8px 15px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease;
+}
+
+img:hover {
+  transform: scale(1.05);
+}
+
+input {
+  border: 1px solid #c0c0c0;
+  padding: 10px;
+  border-radius: 5px;
+  transition: border-color 0.3s ease;
+}
+
+input:focus {
+  border-color: #5d8063;
+  outline: none;
+  box-shadow: 0 0 0 3px rgba(93, 128, 99, 0.2);
+}
+
+button {
+  cursor: pointer;
+  border: none;
+  background: #5d8063;
+  color: white;
+  padding: 10px 20px;
+  border-radius: 5px;
+  font-weight: 600;
+  letter-spacing: 0.5px;
+  transition: background 0.3s ease, transform 0.1s ease;
+}
+
+button:hover {
+  background: #4a694f;
+}
+
+button:active {
+  transform: translateY(1px);
+}
+
+/* --- FAQ Section - Minimalist Style --- */
+.faq-section {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 60px 20px;
+  background: #ffffff;
+  border-radius: 10px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.05);
+}
+
+.faq-section::before,
+.faq-section::after {
+  content: none !important;
+}
+
+.faq-title {
+  font-size: 36px;
+  color: #b56576;
+  text-align: center;
+  margin-bottom: 8px;
+  font-weight: 700;
+  text-transform: none;
+  letter-spacing: normal;
+  text-shadow: none;
+  font-family: "Lora", "Georgia", serif;
+  position: relative;
+}
+
+.faq-subtitle {
+  text-align: center;
+  color: #8d8d8d;
+  font-size: 16px;
+  margin-bottom: 50px;
+  font-weight: 400;
+  text-transform: none;
+  letter-spacing: 1px;
+  position: relative;
+}
+
+.faq-subtitle::before {
+  content: none;
+}
+
+.faq-item {
+  background: #ffffff;
+  border: 1px solid #e0e0e0;
+  padding: 20px 25px;
+  margin-bottom: 15px;
+  position: relative;
+  overflow: hidden;
+  transition: all 0.3s ease;
+  border-radius: 8px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+  cursor: pointer;
+  backdrop-filter: none;
+  clip-path: none;
+  opacity: 1;
+  animation: none;
+}
+
+.faq-item::before,
+.faq-item::after,
+.faq-item .scanline {
+  content: none !important;
+}
+
+.faq-item:hover {
+  transform: translateY(-4px);
+  border-color: #5d8063;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+}
+
+.faq-question {
+  font-weight: 700;
+  color: #5d8063;
+  font-size: 18px;
+  line-height: 1.5;
+  padding-left: 0;
+  position: relative;
+  text-transform: none;
+  letter-spacing: normal;
+  text-shadow: none;
+  font-family: "Lora", "Georgia", serif;
+}
+
+.faq-question::before {
+  content: "→";
+  position: absolute;
+  left: -20px;
+  font-size: 18px;
+  color: #b56576;
+  font-weight: normal;
+  text-shadow: none;
+  transition: transform 0.3s ease;
+}
+
+.faq-item:hover .faq-question::before {
+  transform: rotate(90deg);
+  animation: none;
+}
+
+.faq-answer {
+  color: #4a4a4a;
+  margin-top: 10px;
+  padding-left: 0;
+  line-height: 1.7;
+  font-size: 16px;
+  font-family: "Arial", sans-serif;
+}
+
+/* --- About Section - Minimalist Style --- */
+.about-section {
+  padding: 60px 20px;
+  background: #f8f7f3;
+  min-height: 100vh;
+}
+
+.about-section::before,
+.about-section::after {
+  content: none !important;
+}
+
+.profile {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 60px;
+  gap: 40px;
+  position: relative;
+  z-index: 1;
+}
+
+.profile-img {
+  animation: none;
+}
+
+.profile-img::before {
+  content: none;
+}
+
+.profile-info {
+  max-width: 500px;
+  text-align: left;
+  background: #ffffff;
+  padding: 35px;
+  border-radius: 8px;
+  border: 1px solid #e0e0e0;
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.08);
+  backdrop-filter: none;
+  position: relative;
+  clip-path: none;
+  transition: all 0.4s ease;
+}
+
+.profile-info::before {
+  content: none !important;
+}
+
+.profile-info .name {
+  font-size: 36px;
+  color: #5d8063;
+  margin-bottom: 8px;
+  font-weight: 700;
+  text-transform: none;
+  letter-spacing: normal;
+  text-shadow: none;
+  font-family: "Lora", "Georgia", serif;
+}
+
+.profile-info .role {
+  font-size: 16px;
+  color: #b56576;
+  margin-bottom: 25px;
+  font-weight: 500;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  position: relative;
+  display: inline-block;
+  padding-left: 0;
+}
+
+.profile-info .role::before {
+  content: none;
+}
+
+.bio {
+  color: #4a4a4a;
+  line-height: 1.7;
+  font-size: 16px;
+  font-family: "Arial", sans-serif;
+}
+
+.info-cards {
+  gap: 25px;
+}
+
+.card {
+  background: #ffffff;
+  border: 1px solid #e0e0e0;
+  padding: 30px;
+  width: 300px;
+  border-radius: 8px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+  clip-path: none;
+}
+
+.card::before,
+.card::after {
+  content: none !important;
+}
+
+.card:hover {
+  transform: translateY(-5px) scale(1.01);
+  border-color: #b56576;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+}
+
+.card h3 {
+  font-size: 20px;
+  color: #b56576;
+  margin-bottom: 12px;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  text-shadow: none;
+}
+
+.card p,
+.card ul li {
+  color: #4a4a4a;
+  line-height: 1.7;
+  margin-bottom: 8px;
+  font-family: "Arial", sans-serif;
+}
+
+.card ul {
+  list-style: disc;
+  padding-left: 20px;
+}
+
+.card ul li {
+  padding: 0;
+  padding-left: 0;
+  position: inherit;
+}
+
+.card ul li::before {
+  content: none;
+}
+
+.card a {
+  color: #5d8063;
+  font-weight: 600;
+  text-shadow: none;
+}
+
+.card a::after {
+  content: "";
+  position: absolute;
+  bottom: -2px;
+  left: 0;
+  width: 100%;
+  height: 1px;
+  background: #5d8063;
+  box-shadow: none;
+  transform: scaleX(0);
+  transform-origin: right;
+  transition: transform 0.3s ease;
+}
+
+.card a:hover {
+  color: #4a694f;
+  text-shadow: none;
+}
+
+.card a:hover::after {
+  transform: scaleX(1);
+  transform-origin: left;
+}
+
+.card::before {
+  content: none !important;
+}
+
+@media (max-width: 768px) {
+  body {
+    padding: 0 15px;
+  }
+
+  .faq-section {
+    padding: 40px 15px;
+  }
+
+  .faq-title {
+    font-size: 28px;
+  }
+
+  .profile-info .name {
+    font-size: 30px;
+  }
+
+  .faq-question {
+    font-size: 16px;
+  }
+
+  .faq-answer,
+  .bio,
+  .card p,
+  .card ul li {
+    font-size: 15px;
+  }
+
+  .card {
+    width: 100%;
+    padding: 25px;
+  }
+}
